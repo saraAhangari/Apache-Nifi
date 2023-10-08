@@ -53,6 +53,7 @@ Th goal is to adjust the NiFi processors and configurations accordingly to achie
 
 # Project Structure
 [(Back to top)](#table-of-contents)
+
 The project directory is organized as follows:
 
 - producer.py: Python script to generate data as Kafka Producer into our 2 topics: transactions and users_app_login. 
@@ -65,16 +66,17 @@ The project directory is organized as follows:
 
 # Pipeline Structure
 [(Back to top)](#table-of-contents)
+
 The Nifi processors that are used:
-   - Kafka Consumer Processor: This processor consumes data from Kafka topics.
-   - ExecuteSQL Processor: This processor executes SQL queries against a database and retrieves the results as FlowFiles. It is often used for database interactions and data retrieval.
-   - PutFile Processor: The PutFile processor writes FlowFiles to the local file system or a network location. It is useful for exporting data to files for archival or further processing.
-   - PutMongo Processor: This processor inserts or updates documents in a MongoDB database. It is commonly used for integrating NiFi flows with MongoDB databases.
-   - RouteOnAttribute Processor: The RouteOnAttribute processor routes FlowFiles based on the values of specified attributes. It allows conditional routing of data based on attribute values.
-   - SplitJson Processor: SplitJson splits a FlowFile containing a JSON array into individual FlowFiles for each element in the array. This is useful for processing individual JSON elements separately.
-   - ConvertAvroToJson Processor: This processor converts Avro data format to JSON format. It is handy when working with Avro data and needing it in JSON format for further processing.
-   - LogMessage Processor: LogMessage is used for generating log messages in the NiFi log file. It's often used for debugging and monitoring purposes.
-   - EvaluateJsonPath Processor: EvaluateJsonPath extracts data from JSON-formatted content using JSONPath expressions. It helps retrieve specific values from JSON documents.
-   - MergeContent Processor: MergeContent combines multiple FlowFiles into a single FlowFile. It's commonly used for aggregating data before further processing.
-   - ExecuteScript Processor: ExecuteScript allows you to execute custom scripts (e.g., Groovy, Python) on FlowFiles. It provides flexibility for custom data transformations and processing logic.
+   - `Kafka Consumer Processor`: This processor consumes data from Kafka topics.
+   - `ExecuteSQL Processor`: This processor executes SQL queries against a database and retrieves the results as FlowFiles. It is often used for database interactions and data retrieval.
+   - `PutFile Processor`: The PutFile processor writes FlowFiles to the local file system or a network location. It is useful for exporting data to files for archival or further processing.
+   - `PutMongo Processor`: This processor inserts or updates documents in a MongoDB database. It is commonly used for integrating NiFi flows with MongoDB databases.
+   - `RouteOnAttribute Processor`: The RouteOnAttribute processor routes FlowFiles based on the values of specified attributes. It allows conditional routing of data based on attribute values.
+   - `SplitJson Processor`: SplitJson splits a FlowFile containing a JSON array into individual FlowFiles for each element in the array. This is useful for processing individual JSON elements separately.
+   - `ConvertAvroToJson Processor`: This processor converts Avro data format to JSON format. It is handy when working with Avro data and needing it in JSON format for further processing.
+   - `LogMessage Processor`: LogMessage is used for generating log messages in the NiFi log file. It's often used for debugging and monitoring purposes.
+   - `EvaluateJsonPath Processor`: EvaluateJsonPath extracts data from JSON-formatted content using JSONPath expressions. It helps retrieve specific values from JSON documents.
+   - `MergeContent Processor`: MergeContent combines multiple FlowFiles into a single FlowFile. It's commonly used for aggregating data before further processing.
+   - `ExecuteScript Processor`: ExecuteScript allows you to execute custom scripts (e.g., Groovy, Python) on FlowFiles. It provides flexibility for custom data transformations and processing logic.
 
