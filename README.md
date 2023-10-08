@@ -2,6 +2,10 @@
 ## Overview
 This Apache NiFi project simulates a bank scenario where customer transactions are tracked and joined with user login information. It includes data generation scripts, Kafka integration, SQL database retrieval, stream processing, and data insertion into MongoDB.
 
+
+![Screenshot from 2023-10-09 01-33-58](https://github.com/saraAhangari/Apache-Nifi/assets/81367821/0dab0949-5001-4ec1-91f5-caadb7a68ff5)
+
+
 # Table of contents
 - [Prerequisites](#Prerequisites)
 - [Usage](#usage)
