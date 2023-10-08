@@ -4,7 +4,7 @@ This Apache NiFi project simulates a bank scenario where customer transactions a
 
 Table of Contents
 
-    Prerequisites
-    Setup
-    Usage
-    Project Structure
+*.* Prerequisites
+*.* Setup
+*.* Usage
+*.* Project Structure
